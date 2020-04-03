@@ -8,7 +8,7 @@ import sched
 import sys
 import time
 
-# from RPIO import PWM as pwm  # *** RPIO is deprecated.***
+from RPIO import PWM as pwm  # *** RPIO is deprecated.***
 
 
 JJY_FORMAT = "M{0:03b}0{1:04b}M00{2:02b}0{3:04b}M00{4:02b}0{5:04b}M{6:04b}00{10}{11}0M0{7:04b}{8:04b}M{9:03b}000000M"
