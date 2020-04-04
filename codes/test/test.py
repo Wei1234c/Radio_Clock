@@ -1,12 +1,8 @@
-from radio_clock.jjy.jjy import *
+from radio_clock.txtempus.jjy_tempus import *
 
+import time
+t = time.localtime()
 
-t = time_stamp = 1585870980.0
+bits = PrepareMinute(t)
 
-bits = Encoder.get_bits(t)
 print(bits)
-
-print(Encoder.get_symbols(t))
-
-t1 = Decoder.get_time(bits)
-print(t1 == t)
